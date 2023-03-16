@@ -3,6 +3,7 @@ public class Books
 private String name;
 public String category;
 public int price;
+public String authorName;
 
 public Books()
 {
