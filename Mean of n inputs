@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Test 
+{
+    public static void main(String args[]) 
+    {
+        
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the number of vslues you want to find the average of: ");
+        int n=sc.nextInt();
+        int numbers=0;
+        int sum=0;int avg=0;
+
+
+
+        for(int i=1;i<=n;i++)
+        {
+           System.out.println("Enter value # " + i);
+           numbers=sc.nextInt();
+           sum= sum+numbers;
+        }
+
+
+
+        if(n>0)
+        {
+         avg= sum/n;
+        }
+        System.out.println("The average is:"+avg);
+    }
+}
