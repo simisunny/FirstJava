@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Test 
+{
+    public static void main(String args[]) 
+    {
+        // Write your code here
+        Scanner sc= new Scanner(System.in);
+        System.out.println("total hours worked per week");
+        int totalHours= sc.nextInt();
+        System.out.println("Hourly pay rate");
+        double hourlyPayRate= sc.nextDouble();
+
+
+        double regPay;
+        regPay=totalHours*hourlyPayRate;
+
+        if(totalHours<=40)
+        {
+            System.out.println("Regular pay: "+regPay);
+        }
+        else
+        {
+            regPay= 40*hourlyPayRate;
+            System.out.println("Regular pay: "+regPay);
+            int overTimeHours= totalHours-40;
+            double hourlyOvertimePayRate=(1.5)*hourlyPayRate;
+            double totalOvertimePay=overTimeHours*hourlyOvertimePayRate;
+
+            System.out.println("Overtime pay: "+totalOvertimePay);
+            double totalPay= regPay+totalOvertimePay;
+
+            System.out.println("Total pay: "+totalPay);
+
+
+        }
+    }
+}
