@@ -12,21 +12,29 @@ class Test
 
 
         double regPay;
+        //calculating regular pay. Formula: Regular Pay= Total hours worked * hourly pay money
         regPay=totalHours*hourlyPayRate;
 
         if(totalHours<=40)
         {
+            //printing regular pay if total working hours <= 40
             System.out.println("Regular pay: "+regPay);
         }
+        //calculating regular pay, overtime pay and total pay if working hours > 40
         else
         {
+            //Since working hour is more than 40, calculating regular pay for 40 hours
             regPay= 40*hourlyPayRate;
             System.out.println("Regular pay: "+regPay);
+            //calculating overtime hours. Formula: Overtime Hours= Total Hours worked - 40 hours(regular working hours)
             int overTimeHours= totalHours-40;
+            //calculating overtime hourly pay, Formula: overtime hourly pay= 150% * hourly pay
             double hourlyOvertimePayRate=(1.5)*hourlyPayRate;
+            //calculating total overtime pay = overTime Hours* hourly Overtime Pay Rate
             double totalOvertimePay=overTimeHours*hourlyOvertimePayRate;
 
             System.out.println("Overtime pay: "+totalOvertimePay);
+            //total pay = regular pay + total overtime pay
             double totalPay= regPay+totalOvertimePay;
 
             System.out.println("Total pay: "+totalPay);
