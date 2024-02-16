@@ -1,0 +1,86 @@
+import java.util.Scanner;
+class Test 
+{
+  public static void main(String args[]) 
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Calculator using Switch Case: ");
+    System.out.println(" ");
+    System.out.println("Enter two numbers: ");
+    System.out.println(" ");
+    int c=sc.nextInt();
+    int d=sc.nextInt();
+    System.out.println("Choose an operator + - * /: ");
+    System.out.println(" ");
+    char operator=sc.next().charAt(0);
+    
+    int total=0;
+    int minus=0;
+    int into=0;
+    int dvd=0;
+    
+    total = add(c,d);
+    
+    minus = subtract(c,d);
+  
+    into = multiply(c,d);
+    
+    dvd = divide(c,d);
+    
+    
+    switch(operator)
+    {
+    
+    case '+':
+    
+    System.out.println(("Sum of a and b is "+ total));
+    break;
+    
+   case '-':
+   
+   System.out.println(("Subtraction of a and b is "+ minus));
+   break;
+   
+   case '*':
+   System.out.println(("Product of a and b is "+ into));
+   break;
+   
+   case '/':
+   System.out.println(("Division of a and b is "+ dvd));
+   break;
+   
+   default:
+   System.out.println("Not a valid operator ");
+    }
+  }
+  public static int add(int a, int b)
+  {
+    
+    int sum =a+b;
+    return sum;
+  }
+  
+    public static int subtract(int a, int b)
+  {
+    
+    int subtrac =a-b;
+    return subtrac;
+  }
+  
+    public static int multiply(int a, int b)
+  {
+    
+    int mul =a*b;
+    return mul;
+  }
+  
+    public static int divide(int a, int b)
+  {
+    
+    int div =a/b;
+    return div;
+  }
+  
+  
+}
+  
