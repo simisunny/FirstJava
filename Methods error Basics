@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Find the error");
+      
+      int a = testInt();
+      
+      testVoid();
+      
+      String c =  testString();
+      
+      int d = testSingleArgument(2);
+      
+      String e = testArguments(2,"Simi");
+      
+      int f = testSingleArgument(2);
+      
+      String g = testArguments(1,"c");
+      
+      int h = testSingleArgument(1);
+      
+      testArguments(1,"d");
+      
+  }
+  
+  public static int testInt(){
+    return 0;
+  }
+  
+  public static String testString(){
+    return null;
+  }
+  
+  public static void testVoid(){
+    
+  }
+  
+  public static String testArguments(int a, String b){
+    
+    return null;
+  }
+  
+  public static int testSingleArgument(int a){
+    return 0;
+  }
+}
