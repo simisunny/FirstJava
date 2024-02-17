@@ -1,0 +1,134 @@
+// a,e,i,o,u
+// b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z
+
+//SWITCH -> Possible values
+//IF ELSE -> CONDITION
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+
+      System.out.println(" Enter the alphabet: ");
+      char ch=sc.next().charAt(0);
+      // char s= (char)ch.toLowerCase();
+      switch(Character.toLowerCase(ch))
+      {
+        case 'a':
+        System.out.println(" It is a vowel :) ");
+        break;
+        
+        case 'b':
+        System.out.println(" It is a consonant! ");
+        break;
+         
+        case 'c':
+        System.out.println(" It is a consonant! ");
+        break; 
+        
+                case 'd':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'e':
+        System.out.println("  It is a vowel :)  ");
+        break;
+        
+                case 'f':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'g':
+        System.out.println(" It is a consonant! ");
+        break;
+               
+               
+               
+                case 'h':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        
+                case 'i':
+        System.out.println(" It is a vowel :)  ");
+        break;
+        
+                case 'j':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        
+                case 'k':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'l':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        
+           case 'm':
+        System.out.println(" It is a vowel :) ");
+        break;
+        
+        case 'n':
+        System.out.println(" It is a consonant! ");
+        break;
+         
+        case 'o':
+        System.out.println("  It is a vowel :)  ");
+        break; 
+        
+                case 'p':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'q':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'r':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 's':
+        System.out.println(" It is a consonant! ");
+        break;
+                case 't':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        
+                case 'u':
+        System.out.println("  It is a vowel :)  ");
+        break;
+        
+                case 'v':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        
+                case 'w':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+                case 'x':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+               case 'y':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+               case 'z':
+        System.out.println(" It is a consonant! ");
+        break;
+        
+        default:
+        System.out.println(" Invalid input! ");
+      
+      }
+       
+  }
+}
