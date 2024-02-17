@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+
+      System.out.println(" Enter the time: ");
+      int time=sc.nextInt();
+      
+      if(time>=0 && time<=6)
+      {
+        System.out.println(" Good Night :) ");
+      }
+      else if(time>6 && time<=12)
+      {
+      System.out.println(" Good Morning @ @ ");
+      }
+      else if(time>12 && time<=18)
+      {
+       System.out.println(" Good Afternoon $ ");
+      }
+       else if(time>18 && time<=24)
+       {
+          System.out.println(" Good Evening # ");
+       }
+       else
+       {
+         System.out.println(" Invalid input of time! ");
+       }
+       
+  }
+}
