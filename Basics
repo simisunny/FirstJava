@@ -1,0 +1,49 @@
+//-------------------JVM------------------------------------//
+
+// .java -> compiler complies it to bytecode(.class ) -> JVM converts it to machine code 
+
+
+
+
+//------------------------Entry Point-------------------------//
+
+
+
+// public static void main(String[] args)
+// This is the entry point of any program.
+// It should be named as 'main' and we should pass a String array argument
+// Also, its return type should be Void.
+
+// String array arguments are the arguments passed through CLI. 
+
+// java Filename str1 str2 where str1 and str2 are the arguments passed in the main.
+
+
+
+
+
+
+// --------------Type Casting-----------------------------//
+// Type casting should be done only when converting from smaller sized data type to 
+// larger ones so that there is no data loss.
+// Example: Typecast from int to long but not from long to int.
+
+import java.lang.String;
+public class Main {
+    public static void main(String[] args) {
+     int i=123440;
+     byte b=4;
+     long l=2334788654322666863L; //max 9
+     double d= 3.2;
+     short s= 13;
+     boolean bool=true;
+     float f=6.02f;
+     
+  
+    long ic=(long)i;//Type casting from int to long
+   double dc= (double)i;// type casting from int to double
+    System.out.println(dc);
+  }
+
+}
+
