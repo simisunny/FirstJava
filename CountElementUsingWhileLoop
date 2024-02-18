@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    
+  {
+      int arr[]={9,5,52,3,3,10};
+      int n=9;
+      int count = CountElementUsingWhileLoop(n,arr);
+      
+      if(count==0)
+      System.out.println(count);
+      else
+      System.out.println("The number "+n+ " is found "+count+" time(s).");
+  }
+  
+  public static int CountElementUsingWhileLoop(int n, int arr[])
+  
+  {
+    int count=0;
+    boolean flag=true;
+    int i=0;
+    while(i<arr.length)
+    {
+      if(n==arr[i])
+      {
+       count++;
+      }
+      i++;
+    }
+  return count;
+    
+  }
+}
