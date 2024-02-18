@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    
+  {
+      int arr[]={9,5,52,3,10};
+      int n=11;
+      linearSearchUsingWhileLoop(n,arr);
+      
+  }
+  
+  public static void linearSearchUsingWhileLoop(int n, int arr[])
+  
+  {
+    boolean flag=true;
+    int i=0;
+    while(i<arr.length)
+    {
+      if(n==arr[i])
+      {
+        flag=false;
+        System.out.println("The searched number is "+n+" found at position "+i);
+        break;
+      }
+      i++;
+    }
+    if(flag==true)
+    {
+      System.out.println("Number not found");
+    }
+    
+  }
+}
