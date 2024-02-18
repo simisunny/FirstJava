@@ -1,0 +1,41 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+      int arr[]={2,2,4,6,9,1,0,12,14,10,11,7,3,81,14,10,11,14};
+      int n=-10;
+      int count= countElement(n,arr);
+    
+      if(count==0)
+      {
+        System.out.println("Number "+n+ " is not found");
+      }
+      else
+      {
+        System.out.println("The number "+n+ " is found "+count+" times");
+      }
+    }
+    
+    public static int countElement(int n, int arr[])
+    {
+      
+      int c=0;
+      
+      
+      
+    
+      for (int i=0;i<arr.length ;i++ )
+      {
+        if(n==arr[i])
+        {
+          c++;
+        }
+      }
+      return c;
+    }
+  
+  
+  
+}
