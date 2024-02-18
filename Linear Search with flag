@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args)
+    {
+      int arr[]={2,6,9,1,0,12,14,10,11,7,3,81};
+      int n=1;
+      linearSearch(n, arr);
+    
+      
+    }
+  
+  public static int linearSearch(int n,int arr[])
+  {
+    boolean flag=true;
+    for (int i=0;i<arr.length ;i++ )
+    {
+      if(n==arr[i])
+      {
+        flag=false;
+        System.out.println("The searched number is "+n+" at position "+i);
+        break;
+      }
+       System.out.println("check loop "+i);
+    }
+    if(flag==true)
+      {
+        System.out.println("Not Found!");
+      }
+    return n;
+  }
+}
