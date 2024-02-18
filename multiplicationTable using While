@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args)
+  {
+    
+    //Multiplication Table of a Number
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a number whose multiplication table you want to see: ");
+    int n=sc.nextInt();
+    System.out.println("Enter a number till which you want to see the table: ");
+    int t=sc.nextInt();
+    
+    multiplicationTable(n,t);
+    
+  }
+  
+  public static void multiplicationTable(int n,int t)
+  {
+    int i=1;int mul=1;
+    while(i<=t)
+    {
+      mul=n*i;
+      System.out.println(n+" x "+i+" = "+mul);
+      i++;
+    }
+  }
+}
