@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main 
+{
+  public static void main(String[] args) 
+    {
+      fibonacciSeries();
+     
+    }
+  public static void fibonacciSeries() 
+  {
+    int i=0;
+    int j=1;
+    System.out.print(i+" "+j+" ");
+    
+    for (int loop=2;loop<10 ;loop++) 
+    {
+       int k=0;
+       k=j+i;
+       System.out.print(k+" ");
+       
+       i=j;
+       j=k;
+    }
+  }
+}
+  
