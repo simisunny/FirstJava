@@ -4,23 +4,22 @@ public class Main
 {
   public static void main(String[] args) 
     {
-      fibonacciSeries();
-     
+      fibonacciSeries();//calling the function
     }
   public static void fibonacciSeries() 
   {
-    int i=0;
-    int j=1;
-    System.out.print(i+" "+j+" ");
+    long i=0;
+    long j=1;
+    System.out.print(i+" "+j+" ");// print first and second element
     
-    for (int loop=2;loop<10 ;loop++) 
+    for (int loop=2;loop<20 ;loop++) //loop for the number of elements we want to show
     {
-       int k=0;
-       k=j+i;
-       System.out.print(k+" ");
+       long k=0;
+       k=j+i;//adding previous two numbers to get the third number
+       System.out.print(k+" ");//print k
        
-       i=j;
-       j=k;
+       i=j;//storing the second element into the first
+       j=k;//storing the third element into the second
     }
   }
 }
