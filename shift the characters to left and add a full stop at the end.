@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+  {
+   String str ="level";
+  //output= evel.
+  //shift the characters to left and add a full stop at the end.
+  
+String e="";
+
+for(int i=1;i<str.length();i++)
+{
+e+=str.charAt(i);
+
+}
+ System.out.print(e+".");
+
+  }
+}
+
