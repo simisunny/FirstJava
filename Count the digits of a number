@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        int d=0;
+        int number=-1;//digit=4
+        int count=0;
+        if(number==0)
+        count=1;
+        if(number<0)
+        {
+          number=Math.abs(number);
+        }
+        while(number>0)
+        {
+          number=number/10;
+          count++;
+          d=d%10;
+        }
+        System.out.print(count);
+  
+    }
+    
+}
