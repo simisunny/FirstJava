@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+  {
+int ar[]={10,21,13,49,51};
+int sum=0;
+for(int i:ar)
+{
+  if(i!=13 && i!=49)
+  sum+=i;
+}
+  System.out.println(sum);
+  }
+}
+
+//sum by using foreach loop
