@@ -1,0 +1,17 @@
+class Test 
+{
+    public static void main(String args[]) 
+    {
+        int arr[]={1, 2, 3, 4, 5};
+        int len=arr.length;
+        int n=len-1;
+        double number=0;
+
+        for(int i=0;i<len;i++)
+       {
+           number=number+(arr[i]*Math.pow(10,n));
+           n--;
+       }
+       System.out.println((int)number);
+    }
+}
