@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Main 
+{
+public static void main(String[] args) 
+{
+  String originalString="Hello Santwana Mohanty to the World";
+  String reversedString=reversehalfWordsOfString(originalString);//it will reverse words of a string.
+  System.out.println(reversedString);
+}
+public static String reversehalfWordsOfString(String s)
+{
+  String words[]=s.split(" ");//split it when space is found. It is stored in an array
+  String second="";String first="";
+  
+  for(int i=0;i<words.length/2;i++)
+  {
+    first+=words[i]+" ";
+  }
+  
+  for (int j=words.length/2; j<words.length;j++ ) 
+  {
+      second+=reverseWord(words[j])+" ";
+  }
+  
+  return (first+second).trim();
+}
+public static String reverseWord(String word)
+{
+  String s1="";
+  for(int i=word.length()-1;i>=0;i--)
+  {
+    s1+=word.charAt(i);
+  }
+  return s1;
+}
+}
+
+//IMP
+
+//string length -> () required
+//array length -> () not required
