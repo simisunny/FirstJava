@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      
+      int n=343;
+      palindromeNumber(n);
+      
+    }
+    public static void palindromeNumber(int originalNum)
+    {
+      int d=0;int rev=0;int m=originalNum;
+      
+      while(originalNum!=0)
+      {
+        
+      d=originalNum%10;
+      rev=(rev*10)+d;
+      originalNum=originalNum/10;
+      
+      
+      }
+      if(m==rev)
+      {
+      System.out.println(m+" is a palidrome number ");
+      }
+      else{
+        System.out.println(m+" is not a palidrome number ");
+      }
+    }
+    
+}
+
+
+
+//output:
+343 is a palidrome number 
