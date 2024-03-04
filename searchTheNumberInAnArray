@@ -5,23 +5,30 @@ public class Main
     public static void main(String[] args)
     {
       int arr[]={21,2,30,10,5,19};
-      int n=10;
-      int searchedNumber=searchTheNumberInAnArray(n,arr);
-      System.out.println(searchedNumber);
+      int n=21;
+      boolean searchedNumber=searchTheNumberInAnArray(n,arr);
+      if(searchedNumber==true)
+      {
+      System.out.println(n+" is found");
+      }
+      else{
+      System.out.println(n+" is not found");  
+      }
     }
     
-    public static int searchTheNumberInAnArray(int n,int[] arr)
+    public static boolean searchTheNumberInAnArray(int n,int[] arr)
     {
       
       for (int i=0;i<arr.length;i++)
       {
         if(n==arr[i])
-        return n;
+        return true;
       }
-      return 0;
+      return false;
     }
     
 }
 
 
-//output:10
+//output:21 is found
+
