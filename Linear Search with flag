@@ -30,3 +30,6 @@ public class Main {
    
   }
 }
+
+
+//output:The searched number is 1 at position 3
